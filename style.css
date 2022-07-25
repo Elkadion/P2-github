@@ -18,7 +18,7 @@ justify-content: flex-end;
 flex-wrap: wrap;
 }
 
-nav a{
+nav a {
     padding: 3rem;
     text-align: center;  
 }
@@ -33,5 +33,37 @@ padding: 0 2rem;
 }
 
 @media (max-width: 800px) {
+
 }
 
+#titre1 {
+font-size: 1.5rem;
+font-style: bold;
+padding-left: 1rem;
+}
+
+#titre2 {
+font-size: 1rem;
+font-style: "normal";
+font-family: "raleway";
+padding-left: 1rem;
+}
+
+/* Barre de recherche*/
+
+#searchbar { position: relative; width: 1040px; height: auto;
+padding-left: 1rem;
+padding-top: 1rem;
+}
+
+.formulaire {display: inline-block;}
+
+.formulaire .ville {width: 220px; height: 30px;}
+
+.formulaire .bouton{ background-color: #173cb4; color: white;
+
+}
+
+
+
+ 
