@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BOOKI</title>
+    <script
+      src="https://kit.fontawesome.com/8178a4dcf9.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Stylesheets -->
 
-<link type="text/css" rel="stylesheet" href="style.css" >
+    <link type="text/css" rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
 
-</head>
-<body>
-  <header>
-    <nav>
-        <img id="logo" src="./images/logo/Booki.png" alt="Bookilogo">
-        <a href="">Hébergement</a>
-        <a href="">Activités</a>
-    </nav>
-  </header>
-  
-  <h1 id="titre1">Trouvez votre hébergement pour des vacances de rêve</h1>
-  <h2 id="titre2">En plein centre ville ou en pleine nature</h2>
+    <header>
+      <nav>
+        <img id="logo" src="./images/logo/Booki.png" alt="Bookilogo" />
+        <div class="sub-nav">
+          <a href="">Hébergement</a>
+          <a href="">Activités</a>
+        </div>
+      </nav>
+    </header>
 
-  <!--Input tag -->
+    <!-- HEADING -->
 
-  <div id="searchbar">
-    <form action="" class="formulaire">
-    <input class="ville" type="text" value="Veuillez indiquez la ville"/>
-    <input class="bouton" type="button" value="Rechercher"/>
-  </form>
+    <h1 id="titre1">Trouvez votre hébergement pour des vacances de rêve</h1>
+    <p id="titre2">En plein centre ville ou en pleine nature</p>
 
-   
-  
-</body>
-</html> 
+    <!--SEARCH FORM -->
+    <div class="search-form">
+      <i class="fa-solid fa-location-dot"></i>
+      <input type="text" placeholder=" Brisbane, Australie " />
+      <button>Rechercher</button>
+    </div>
+  </body>
+</html>

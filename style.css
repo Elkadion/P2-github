@@ -1,69 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
 /*WILDCARD */
 * {
-box-sizing: border-box;
-font-family: "Raleway" , "sans-serif";
+  box-sizing: border-box;
+  font-family: "Raleway", "sans-serif";
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
+/* NAVBAR */
 nav {
-display: flex;
-align-items: center;
-justify-content: flex-end;
-flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 nav a {
-    padding: 3rem;
-    text-align: center;  
+  padding: 2rem;
+  text-align: center;
+}
+
+.sub-nav {
+  display: flex;
+}
+
+.sub-nav a:hover {
+  color: #0065fc;
 }
 
 nav a:hover {
-border-top: 3px solid #0065fc;
+  border-top: 3px solid #0065fc;
 }
 
 #logo {
-margin-right: auto;
-padding: 0 2rem;
-}
-
-@media (max-width: 800px) {
-
+  margin-right: auto;
+  padding: 0 2rem;
 }
 
 #titre1 {
-font-size: 1.5rem;
-font-style: bold;
-padding-left: 1rem;
+  font-size: 1.5rem;
+  font-style: bold;
+  padding-left: 1rem;
+  margin-bottom: 10px;
 }
 
 #titre2 {
-font-size: 1rem;
-font-style: "normal";
-font-family: "raleway";
-padding-left: 1rem;
+  font-size: 1rem;
+  font-style: "normal";
+  font-family: "raleway";
+  padding-left: 1rem;
+  margin-bottom: 20px;
 }
 
-/* Barre de recherche*/
-
-#searchbar { position: relative; width: 1040px; height: auto;
-padding-left: 1rem;
-padding-top: 1rem;
+/* SEARCHFORM*/
+.search-form {
+  display: flex;
+  padding-left: 0.8rem;
 }
 
-.formulaire {display: inline-block;}
-
-.formulaire .ville {width: 220px; height: 30px;}
-
-.formulaire .bouton{ background-color: #173cb4; color: white;
-
+.search-form * {
+  padding: 1rem 1.5rem;
 }
 
+.search-form i {
+  background-color: lightgray;
+  border-radius: 1rem 0 0 1rem;
+}
 
+.search-form input {
+  flex-basis: 16rem;
+  border: solid 1px lightgray;
+  padding: 1rem;
+}
 
- 
+.search-form input::placeholder {
+  font-size: 1rem;
+}
+
+.search-form button {
+  background-color: #0065fc;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 0 1rem 1rem 0;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .sub-nav {
+    flex-basis: 100%;
+  }
+}
+.sub-nav a {
+  flex-basis: 50%;
+}
