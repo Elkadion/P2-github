@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
+:root {
+  --blue: #0065fc;
+  --lightgray: #f2f2f2;
+  --lightblue: #deebff;
+}
 /*WILDCARD */
 * {
   box-sizing: border-box;
@@ -62,7 +67,7 @@ nav a:hover {
   padding-left: 0.8rem;
 }
 
-.search-form * {
+.search-form > * {
   padding: 1rem 1.5rem;
 }
 
@@ -89,13 +94,102 @@ nav a:hover {
   border-radius: 0 1rem 1rem 0;
   border: none;
   cursor: pointer;
+  opacity: 0.9;
+  transition: transform 150ms;
+}
+
+.fas.fa-search {
+  display: none;
+}
+
+.search-form button:hover {
+  opacity: 1;
+  transform: scale(1.03);
 }
 
 @media (max-width: 800px) {
   .sub-nav {
     flex-basis: 100%;
   }
+  .input-search-text {
+    display: none;
+  }
+  .fas.fa-search {
+    background-color: #0065fc;
+    display: inline;
+  }
 }
 .sub-nav a {
   flex-basis: 50%;
+}
+
+/* FILTERS */
+
+.filter-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter {
+  border: 2px solid lightgray;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.filter-list h1 {
+  padding-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.fas.fa-money-bill-wave {
+  color: blue;
+  background-color: #deebff;
+  padding: 1rem;
+  border-radius: 50%;
+  margin: -2px;
+}
+
+.fas.fa-child {
+  color: blue;
+  background-color: #deebff;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin: -2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fas.fa-heart {
+  color: blue;
+  background-color: #deebff;
+  padding: 1rem;
+  border-radius: 50%;
+  margin: -2px;
+}
+
+.fas.fa-dog {
+  color: blue;
+  background-color: #deebff;
+  padding: 1rem;
+  border-radius: 50%;
+  margin: -2px;
+}
+
+.filter span {
+  font-weight: bold;
+  padding: 0 1rem;
+}
+
+/* FILTER HOVER  */
+
+.filter:hover {
+  opacity: 1;
+  transform: scale(1.03);
+  cursor: pointer;
 }
