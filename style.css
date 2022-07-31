@@ -242,3 +242,29 @@ nav a:hover {
     flex-direction: column-reverse;
   }
 }
+
+.liste-appartements div {
+  border: 1px solid blue;
+  flex-basis: (33%-1rem);
+}
+
+.liste-appartements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.appartements-list .populaire {
+  flex-direction: column;
+  display: flex;
+  gap: 1rem;
+}
+
+.appartements-list .populaire div {
+  border: 1px solid blue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
