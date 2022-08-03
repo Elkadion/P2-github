@@ -43,14 +43,14 @@ nav a:hover {
 
 #titre1 {
   font-size: 1.5rem;
-  font-style: bold;
+  font-weight: bold;
   padding-left: 1rem;
   margin-bottom: 10px;
 }
 
 #titre2 {
   font-size: 1rem;
-  font-style: "normal";
+  font-weight: "normal";
   font-family: "raleway";
   padding-left: 1rem;
   margin-bottom: 20px;
@@ -243,11 +243,6 @@ nav a:hover {
   }
 }
 
-.liste-appartements div {
-  border: 1px solid blue;
-  flex-basis: (33%-1rem);
-}
-
 .liste-appartements {
   display: flex;
   flex-wrap: wrap;
@@ -267,4 +262,34 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+/* Cards Marseille */
+.carte-appartement {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 16px #0000002e;
+}
+
+.carte-appartement img {
+  border-radius: 1rem 1rem 0 0;
+  height: 10rem;
+  width: 20rem;
+}
+
+.carte-appartement p {
+  margin: 0.3rem;
+}
+
+.carte-appartement h3 {
+  margin: 0.3rem;
+}
+
+.blue {
+  color: #0065fc;
+}
+
+.grey {
+  color: darkgray;
 }
