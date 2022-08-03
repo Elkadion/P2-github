@@ -228,10 +228,6 @@ nav a:hover {
   flex-basis: 66%;
 }
 
-.populaire {
-  flex-basis: 33%;
-}
-
 .marseille a {
   font-weight: bold;
 }
@@ -257,7 +253,6 @@ nav a:hover {
 }
 
 .appartements-list .populaire div {
-  border: 1px solid blue;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -291,4 +286,22 @@ nav a:hover {
 
 .grey {
   color: darkgray;
+}
+
+.populaire .carte-appartement {
+  border: 1px solid red;
+  height: 50%;
+  width: 80%;
+}
+
+.populaire .carte-appartement img {
+  border-radius: 1rem 0 0 1rem;
+  height: 10rem;
+  width: 10rem;
+}
+
+.populaire .carte-appartement p {
+}
+
+.populaire .carte-appartement h3 {
 }
