@@ -2,7 +2,6 @@
 
 /*WILDCARD */
 * {
-  box-sizing: border-box;
   font-family: "Raleway", "sans-serif";
 }
 
@@ -228,11 +227,15 @@ nav a:hover {
   flex-basis: 66%;
 }
 
+.populaire {
+  flex-basis: 33%;
+}
+
 .marseille a {
   font-weight: bold;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .appartements-list {
     flex-direction: column-reverse;
   }
@@ -252,18 +255,17 @@ nav a:hover {
   gap: 1rem;
 }
 
-.appartements-list .populaire div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
 /* Cards Marseille */
 .carte-appartement {
   background-color: white;
   border-radius: 1rem;
   padding: 0.5rem;
   box-shadow: 0 0 16px #0000002e;
+}
+
+.carte-appartement :hover {
+  transform: scale(1.03);
+  cursor: pointer;
 }
 
 .carte-appartement img {
@@ -280,6 +282,14 @@ nav a:hover {
   margin: 0.3rem;
 }
 
+.populaire .carte-appartement .populaire-description p {
+  margin: 0.2rem;
+}
+
+.populaire .carte-appartement .populaire-description .stars {
+  margin-top: auto;
+}
+
 .blue {
   color: #0065fc;
 }
@@ -288,20 +298,72 @@ nav a:hover {
   color: darkgray;
 }
 
+/* Populaire CARD */
+
+.populaire {
+  display: flex;
+  flex-direction: column;
+}
+
 .populaire .carte-appartement {
-  border: 1px solid red;
-  height: 50%;
-  width: 80%;
+  display: flex;
+  flex-basis: 100%;
+  background-color: white;
+  min-width: 15rem;
+  height: 9rem;
+  max-height: 10rem;
+  box-shadow: 0 0 16px #0000002e;
 }
 
 .populaire .carte-appartement img {
+  width: 50%;
   border-radius: 1rem 0 0 1rem;
-  height: 10rem;
-  width: 10rem;
+  margin-right: 0.5rem;
+  object-fit: cover;
 }
 
-.populaire .carte-appartement p {
+.populaire .carte-appartement .populaire-description {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
 }
 
-.populaire .carte-appartement h3 {
+.populaire h3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ACTIVITIES */
+
+.activities-list {
+  display: grid;
+  background-color: teal;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 3fr;
+  grid-gap: 30px;
+  height: 550px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.activities-list > * {
+  border: 1px solid red;
+}
+
+.big {
+  grid-row: 1 /4;
+}
+
+.big2 {
+  grid-column: 3/4;
+}
+
+.medium {
+  grid-row: span 2;
+}
+
+.small1 {
+  grid-column: 2/3;
+  grid-row: 3/4;
 }
