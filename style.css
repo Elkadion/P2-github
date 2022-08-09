@@ -334,36 +334,50 @@ nav a:hover {
   justify-content: space-between;
 }
 
-/* ACTIVITIES */
+/* ACTIVITES */
 
-.activities-list {
-  display: grid;
-  background-color: teal;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 3fr;
-  grid-gap: 30px;
-  height: 550px;
-  margin-bottom: 50px;
-  justify-content: center;
+.activités {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
 
-.activities-list > * {
+.carte-activité {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.carte-activité a {
   border: 1px solid red;
 }
 
-.big {
-  grid-row: 1 /4;
+.carte-activité img {
+  object-fit: cover;
+  width: 285px;
+  border-radius: 15px 15px 0 0;
+  max-width: 100%;
 }
 
-.big2 {
-  grid-column: 3/4;
+.carte-informative3 img {
+  height: 480px;
 }
 
-.medium {
-  grid-row: span 2;
+.carte-informative4 img {
+  height: 225px;
 }
 
-.small1 {
-  grid-column: 2/3;
-  grid-row: 3/4;
+.carte-informative5 img {
+  height: 155px;
+}
+
+.carte-informative6 img {
+  height: 200px;
+}
+
+.carte-informative7 img {
+  height: 180px;
 }
