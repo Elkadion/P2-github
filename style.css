@@ -501,3 +501,33 @@ nav a:hover {
     margin-bottom: 30px;
   }
 }
+
+/* FOOTER */
+
+.footer-container {
+  width: 100%;
+  background: #f2f2f2;
+  height: 250px;
+  display: flex;
+  padding-top: 40px;
+  margin-left: 0;
+  margin-top: 50px;
+}
+
+.footer-box {
+  flex: 1;
+}
+
+.footer-ul {
+  list-style-type: none;
+}
+
+.section-footer-title {
+  margin-left: 40px;
+}
+
+.section-footer-link {
+  text-decoration: none;
+  color: grey;
+  line-height: 40px;
+}
