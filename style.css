@@ -19,7 +19,7 @@ nav {
 }
 
 nav a {
-  padding: 2rem;
+  padding: 32px;
   text-align: center;
 }
 
@@ -37,55 +37,55 @@ nav a:hover {
 
 #logo {
   margin-right: auto;
-  padding: 0 2rem;
+  padding: 0 32px;
 }
 
 #titre1 {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: bold;
-  padding-left: 1rem;
+  padding-left: 16px;
   margin-bottom: 10px;
 }
 
 #titre2 {
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: "normal";
   font-family: "raleway";
-  padding-left: 1rem;
+  padding-left: 16px;
   margin-bottom: 20px;
 }
 
 /* SEARCHFORM*/
 .search-form {
   display: flex;
-  padding-left: 0.8rem;
+  padding-left: 14px;
 }
 
 .search-form > * {
-  padding: 1rem 1.5rem;
+  padding: 16px 24px;
 }
 
 .search-form i {
   background-color: lightgray;
-  border-radius: 1rem 0 0 1rem;
+  border-radius: 16px 0 0 16px;
 }
 
 .search-form input {
-  flex-basis: 16rem;
+  flex-basis: 256px;
   border: solid 1px lightgray;
-  padding: 1rem;
+  padding: 16px;
 }
 
 .search-form input::placeholder {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .search-form button {
   background-color: #0065fc;
   color: white;
-  font-size: 1.2rem;
+  font-size: 20px;
   font-weight: bold;
-  border-radius: 0 1rem 1rem 0;
+  border-radius: 0 16px 16px 0;
   border: none;
   cursor: pointer;
   opacity: 0.9;
@@ -122,27 +122,27 @@ nav a:hover {
 .filter-list {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 32px;
+  margin-top: 32px;
   flex-wrap: wrap;
 }
 
 .filter {
   border: 2px solid lightgray;
-  border-radius: 2rem;
+  border-radius: 32px;
   display: flex;
   align-items: center;
 }
 
 .filter-list h1 {
-  padding-left: 1rem;
-  font-size: 1.2rem;
+  padding-left: 16px;
+  font-size: 20px;
 }
 
 .fas.fa-money-bill-wave {
   color: blue;
   background-color: #deebff;
-  padding: 1rem;
+  padding: 16px;
   border-radius: 50%;
   margin: -2px;
 }
@@ -150,8 +150,8 @@ nav a:hover {
 .fas.fa-child {
   color: blue;
   background-color: #deebff;
-  width: 3rem;
-  height: 3rem;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   margin: -2px;
   display: flex;
@@ -162,7 +162,7 @@ nav a:hover {
 .fas.fa-heart {
   color: blue;
   background-color: #deebff;
-  padding: 1rem;
+  padding: 16px;
   border-radius: 50%;
   margin: -2px;
 }
@@ -170,14 +170,14 @@ nav a:hover {
 .fas.fa-dog {
   color: blue;
   background-color: #deebff;
-  padding: 1rem;
+  padding: 16px;
   border-radius: 50%;
   margin: -2px;
 }
 
 .filter span {
   font-weight: bold;
-  padding: 0 1rem;
+  padding: 0 16px;
 }
 
 /* FILTER HOVER  */
@@ -193,34 +193,34 @@ nav a:hover {
 .info {
   display: flex;
   align-items: center;
-  margin-top: 2rem;
-  padding-left: 1rem;
+  margin-top: 32px;
+  padding-left: 16px;
 }
 
 .fas.fa-info {
   color: #0065fc;
-  width: 2rem;
-  height: 2rem;
+  width: 32px;
+  height: 32px;
   border: solid 1px darkgray;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1rem;
+  margin-right: 16px;
 }
 
 /* LISTE DES APPARTEMENTS */
 
 .appartements-list {
   display: flex;
-  gap: 1rem;
+  gap: 16px;
 }
 
 .appartements-list > div {
   background-color: #f2f2f2;
-  padding: 1rem;
-  border-radius: 1rem;
-  margin-top: 2rem;
+  padding: 16px;
+  border-radius: 16px;
+  margin-top: 32px;
 }
 
 .marseille {
@@ -245,21 +245,21 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 1rem;
-  gap: 1rem;
+  margin-bottom: 16px;
+  gap: 16px;
 }
 
 .appartements-list .populaire {
   flex-direction: column;
   display: flex;
-  gap: 1rem;
+  gap: 16px;
 }
 
 /* Cards Marseille */
 .carte-appartement {
   background-color: white;
-  border-radius: 1rem;
-  padding: 0.5rem;
+  border-radius: 16px;
+  padding: 8px;
   box-shadow: 0 0 16px #0000002e;
 }
 
@@ -269,21 +269,21 @@ nav a:hover {
 }
 
 .carte-appartement img {
-  border-radius: 1rem 1rem 0 0;
-  height: 10rem;
-  width: 20rem;
+  border-radius: 16px 16px 0 0;
+  height: 160px;
+  width: 320px;
 }
 
 .carte-appartement p {
-  margin: 0.3rem;
+  margin: 6px;
 }
 
 .carte-appartement h3 {
-  margin: 0.3rem;
+  margin: 6px;
 }
 
 .populaire .carte-appartement .populaire-description p {
-  margin: 0.2rem;
+  margin: 4px;
 }
 
 .populaire .carte-appartement .populaire-description .stars {
@@ -309,16 +309,16 @@ nav a:hover {
   display: flex;
   flex-basis: 100%;
   background-color: white;
-  min-width: 15rem;
-  height: 9rem;
-  max-height: 10rem;
+  min-width: 250px;
+  height: 140px;
+  max-height: 160px;
   box-shadow: 0 0 16px #0000002e;
 }
 
 .populaire .carte-appartement img {
   width: 50%;
-  border-radius: 1rem 0 0 1rem;
-  margin-right: 0.5rem;
+  border-radius: 16px 0 0 16px;
+  margin-right: 8px;
   object-fit: cover;
 }
 
@@ -326,7 +326,7 @@ nav a:hover {
   flex-basis: 100%;
   display: flex;
   flex-direction: column;
-  padding-left: 2rem;
+  padding-left: 32px;
 }
 
 .populaire h3 {
